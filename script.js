@@ -1,20 +1,25 @@
 'use strict';
 
 class Fierst{
-    
+    constructor(){
+        this.phrase = 'Привет я метод родителя!';   
+    }   
 hello() {
-    console.log('Привет я метод родителя!');  
+    console.log(`${this.phrase}`);  
 }
 }
 class Second extends Fierst {
-
+    constructor(phrase) {
+        super(phrase);    
+    }
 hello() {
-    first.hello();    
+     super.hello();
     console.log('А я наследуемый метод!');   
 }
-}
-const first = new Fierst();
-const second = new Second();
 
+}
+
+const second = new Second();
+console.log(second);
 second.hello();
 
