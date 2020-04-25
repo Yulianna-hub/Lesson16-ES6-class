@@ -9,8 +9,8 @@ hello() {
 }
 }
 class Second extends Fierst {
-    constructor(phrase) {
-        super(phrase);    
+    constructor() {
+        super();    
     }
 hello() {
      super.hello();
@@ -20,6 +20,5 @@ hello() {
 }
 
 const second = new Second();
-console.log(second);
 second.hello();
 
