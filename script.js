@@ -9,9 +9,6 @@ hello() {
 }
 }
 class Second extends Fierst {
-    constructor() {
-        super();    
-    }
 hello() {
      super.hello();
     console.log('А я наследуемый метод!');   
